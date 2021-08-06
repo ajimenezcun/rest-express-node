@@ -3,8 +3,18 @@ const { response } = require('express');
 const getUsers = (req, res = response) => {
 
     const params = req.query;
+    const users = [
+        {
+            user: "Alejandro",
+            email: "ajimenez@creativoapp.com"
+        },
+        {
+            user: "Hector",
+            email: "hector@creativoapp.com"
+        }
+    ];
 
-    res.json(params);
+    res.json(users);
 }
 
 const postUsers = (req, res = response) => {
